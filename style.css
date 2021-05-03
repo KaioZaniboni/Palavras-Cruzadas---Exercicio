@@ -1,0 +1,800 @@
+/* CSS Geral */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 750px;
+}
+
+.corpo_geral {
+    height: 100%;
+    width: 100%;
+}
+
+/* Fim CSS Geral */
+
+
+
+/* Inicio Cabeçalho */
+.corpo_cabecalho {
+    display: flex;
+    justify-content: center;
+    height: 6%;
+    width: 100%;
+    background-color: rgba(0, 0, 255);
+}
+
+.caixa_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(222, 184, 135);
+    border-radius: 50px;
+}
+
+.texto_cabecalho {
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+/* Fim Cabeçalho */
+
+
+/* Inicio Corpo Central */
+.corpo_central {
+    display: flex;
+    position: relative;
+    height: 79%;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.6);
+}
+
+.menu_lateral {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+
+.caixa_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60%;
+    top: 15%;
+}
+
+.config {
+    display: none;
+}
+
+.caixa_menu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60%;
+    top: 15%;
+    display: none;
+}
+
+ul {
+    width: 80%;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    font-size: 2vw;
+    font-weight: 900;
+    background-color: rgba(222, 184, 135);
+    padding: 5%;
+    margin: 15% 0%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.corpo_cruzadas {
+    position: relative;
+    height: 100%;
+    width: 80%;
+}
+
+.caixa_cruzadas {
+    position: relative;
+    height: 540px;
+    width: 725px;
+    top: 6%;
+    left: 15%;
+    display: none;
+    font-weight: 600;
+}
+
+/* O Tamanho dos inputs e a class caixa_cruzadas, 
+foram calculados de forma que o deslocamento de 4% de left e 5% de top, 
+sejam o suficiente para os quadrados ficarem corretamente um ao lado do outro*/
+
+input {
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border: solid 1px black;
+    text-align: center;
+    font-weight: 600;
+}
+
+.input_CPU-1 {
+    top: 25%;
+    left: 68%;
+}
+
+.input_CPU-2 {
+    top: 25%;
+    left: 72%;
+}
+
+.input_CPU-3 {
+    top: 25%;
+    left: 76%;
+}
+
+.input_ULA-1 {
+    top: 30%;
+    left: 76%;
+}
+
+.input_ULA-2 {
+    top: 35%;
+    left: 76%;
+}
+
+.input_registradores-1 {
+    top: 50%;
+    left: 8%;
+}
+
+.input_registradores-2 {
+    top: 50%;
+    left: 12%;
+}
+
+.input_registradores-3 {
+    top: 50%;
+    left: 16%;
+}
+
+.input_registradores-4 {
+    top: 50%;
+    left: 20%;
+}
+
+.input_registradores-5 {
+    top: 50%;
+    left: 24%;
+}
+
+.input_registradores-6 {
+    top: 50%;
+    left: 28%;
+}
+
+.input_registradores-7 {
+    top: 50%;
+    left: 32%;
+}
+
+.input_registradores-8 {
+    top: 50%;
+    left: 36%;
+}
+
+.input_registradores-9 {
+    top: 50%;
+    left: 40%;
+}
+
+.input_registradores-10 {
+    top: 50%;
+    left: 44%;
+}
+
+.input_registradores-11 {
+    top: 50%;
+    left: 48%;
+}
+
+.input_registradores-12 {
+    top: 50%;
+    left: 52%;
+}
+
+.input_registradores-13 {
+    top: 50%;
+    left: 56%;
+}
+
+.input_RAM-1 {
+    top: 25%;
+    left: 36%;
+}
+
+.input_RAM-2 {
+    top: 30%;
+    left: 36%;
+}
+
+.input_RAM-3 {
+    top: 35%;
+    left: 36%;
+}
+
+.input_ROM-1 {
+    top: 25%;
+    left: 28%;
+}
+
+.input_ROM-2 {
+    top: 30%;
+    left: 28%;
+}
+
+.input_ROM-3 {
+    top: 35%;
+    left: 28%;
+}
+
+.input_EPROM-1 {
+    top: 35%;
+    left: 64%;
+}
+
+.input_EPROM-2 {
+    top: 40%;
+    left: 64%;
+}
+
+.input_EPROM-3 {
+    top: 45%;
+    left: 64%;
+}
+
+.input_EPROM-4 {
+    top: 50%;
+    left: 64%;
+}
+
+.input_EPROM-5 {
+    top: 55%;
+    left: 64%;
+}
+
+.input_flash-1 {
+    top: 25%;
+    left: 88%;
+}
+
+.input_flash-2 {
+    top: 30%;
+    left: 88%;
+}
+
+.input_flash-3 {
+    top: 35%;
+    left: 88%;
+}
+
+.input_flash-4 {
+    top: 40%;
+    left: 88%;
+}
+
+.input_flash-5 {
+    top: 45%;
+    left: 88%;
+}
+
+.input_memoria_de_massa-1 {
+    top: 35%;
+    left: 32%;
+}
+
+.input_memoria_de_massa-2 {
+    top: 35%;
+    left: 40%;
+}
+
+.input_memoria_de_massa-3 {
+    top: 35%;
+    left: 44%;
+}
+
+.input_memoria_de_massa-4 {
+    top: 35%;
+    left: 48%;
+}
+
+.input_memoria_de_massa-5 {
+    top: 35%;
+    left: 52%;
+}
+
+.input_memoria_de_massa-6 {
+    top: 35%;
+    left: 56%;
+}
+
+.input_memoria_de_massa-7 {
+    top: 35%;
+    left: 60%;
+}
+
+.input_memoria_de_massa-8 {
+    top: 35%;
+    left: 68%;
+}
+
+.input_memoria_de_massa-9 {
+    top: 35%;
+    left: 72%;
+}
+
+.input_memoria_de_massa-10 {
+    top: 35%;
+    left: 80%;
+}
+
+.input_memoria_de_massa-11 {
+    top: 35%;
+    left: 84%;
+}
+
+.input_DMA-1 {
+    top: 10%;
+    left: 56%;
+}
+
+.input_DMA-2 {
+    top: 10%;
+    left: 60%;
+}
+
+.input_DMA-3 {
+    top: 10%;
+    left: 64%;
+}
+
+.input_CS-1 {
+    top: 25%;
+    left: 52%;
+}
+
+.input_CS-2 {
+    top: 25%;
+    left: 56%;
+}
+
+.input_adress_bus-1 {
+    top: 5%;
+    left: 56%;
+}
+
+.input_adress_bus-2 {
+    top: 15%;
+    left: 56%;
+}
+
+.input_adress_bus-3 {
+    top: 20%;
+    left: 56%;
+}
+
+.input_adress_bus-4 {
+    top: 30%;
+    left: 56%;
+}
+
+.input_adress_bus-5 {
+    top: 40%;
+    left: 56%;
+}
+
+.input_adress_bus-6 {
+    top: 45%;
+    left: 56%;
+}
+
+.input_data_bus-1 {
+    top: 55%;
+    left: 40%;
+}
+
+.input_data_bus-2 {
+    top: 60%;
+    left: 40%;
+}
+
+.input_data_bus-3 {
+    top: 65%;
+    left: 40%;
+}
+
+.input_data_bus-4 {
+    top: 70%;
+    left: 40%;
+}
+
+.input_data_bus-5 {
+    top: 75%;
+    left: 40%;
+}
+
+.input_data_bus-6 {
+    top: 80%;
+    left: 40%;
+}
+
+.input_data_bus-7 {
+    top: 85%;
+    left: 40%;
+}
+
+.input_i5-1 {
+    top: 55%;
+    left: 20%;
+}
+
+.input_i7-1 {
+    top: 40%;
+    left: 48%;
+}
+
+.input_dual_core-1 {
+    top: 15%;
+    left: 8%;
+}
+
+.input_dual_core-2 {
+    top: 20%;
+    left: 8%;
+}
+
+.input_dual_core-3 {
+    top: 25%;
+    left: 8%;
+}
+
+.input_dual_core-4 {
+    top: 30%;
+    left: 8%;
+}
+
+.input_dual_core-5 {
+    top: 35%;
+    left: 8%;
+}
+
+.input_dual_core-6 {
+    top: 40%;
+    left: 8%;
+}
+
+.input_dual_core-7 {
+    top: 45%;
+    left: 8%;
+}
+
+.input_dual_core-8 {
+    top: 55%;
+    left: 8%;
+}
+
+.input_quad_core-1 {
+    top: 80%;
+    left: 36%;
+}
+
+.input_quad_core-2 {
+    top: 80%;
+    left: 44%;
+}
+
+.input_quad_core-3 {
+    top: 80%;
+    left: 48%;
+}
+
+.input_quad_core-4 {
+    top: 80%;
+    left: 52%;
+}
+
+.input_quad_core-5 {
+    top: 80%;
+    left: 56%;
+}
+
+.input_quad_core-6 {
+    top: 80%;
+    left: 60%;
+}
+
+.input_quad_core-7 {
+    top: 80%;
+    left: 64%;
+}
+
+.input_quad_core-8 {
+    top: 80%;
+    left: 68%;
+}
+
+.palavra-1 {
+    top: 25%;
+    left: 64%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-2 {
+    top: 20%;
+    left: 76%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-3 {
+    top: 50%;
+    left: 4%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-4 {
+    top: 20%;
+    left: 36%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-5 {
+    top: 20%;
+    left: 28%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-6 {
+    top: 30%;
+    left: 64%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-7 {
+    top: 20%;
+    left: 88%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-8 {
+    top: 35%;
+    left: 24%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-9 {
+    top: 10%;
+    left: 52%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-10 {
+    top: 25%;
+    left: 48%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-11 {
+    top: 0%;
+    left: 56%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-12 {
+    top: 45%;
+    left: 40%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-13 {
+    top: 45%;
+    left: 20%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-14 {
+    top: 30%;
+    left: 48%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-15 {
+    top: 10%;
+    left: 8%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.palavra-16 {
+    top: 80%;
+    left: 32%;
+    background-color: rgb(98, 255, 177);
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.button_checar {
+    position: absolute;
+    background-color: rgba(222, 184, 135);
+    bottom: 10%;
+    right: 0;
+    height: 45px;
+    width: 100px;
+    font-size: 1vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Fim Corpo Central */
+
+
+/* Inicio Rodape */
+.corpo_rodape {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.6);
+}
+
+.caixa_rodape {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.caixa_select {
+    display: flex;
+    width: 70%;
+    height: 30%;
+}
+
+.select_dicas {
+    height: 100%;
+    width: 100%;
+}
+
+.button_dica {
+    background-color: rgba(222, 184, 135);
+    height: 100%;
+    width: 4%;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(222, 184, 135);
+    float: right;
+    height: 100%;
+    width: 15%;
+    font-weight: 900;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dicas_texto {
+    font-size: 1.5vw;
+}
+
+.caixa_texto_rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+    background-color: rgba(0, 0, 255);
+}
+
+.texto_rodape {
+    width: 80%;
+    text-align: center;
+    font-size: 1.6vw;
+    color: white;
+}
+
+/* Fim Rodape */

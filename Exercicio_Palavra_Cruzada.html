@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="corpo_geral">
+
+        <div class="corpo_cabecalho">
+            <div class="caixa_titulo">
+                <div id="text_cabecalho" class="texto_cabecalho">
+                    Palavras Cruzadas - Exercicio
+                </div>
+            </div>
+        </div>
+
+        <div class="corpo_central">
+            <div class="menu_lateral">
+                <nav id="menu_1" class="caixa_menu">
+                    <ul>
+                        <li id="button_iniciar" onclick="iniciar()">Iniciar</li>
+                        <li id="button_config" onclick="configuracoes()">Configurações</li>
+                    </ul>
+                </nav>
+                <nav id="menu_2" class="caixa_menu2">
+                    <ul>
+                        <li id="button_reiniciar" onclick="reiniciar()">Reiniciar</li>
+                        <li id="button_sair" onclick="sair()">Sair</li>
+                    </ul>
+                </nav>
+                <nav id="menu_config" class="config">
+                    <ul>
+                        <Li id="titulo_fonte">Tamanho da Fonte</Li>
+                        <li id="button_pequena" onclick="pequena()">Pequena</li>
+                        <li id="button_normal" onclick="normal()">Normal</li>
+                        <Li id="button_grande" onclick="grande()">Grande</Li>
+                        <li id="button_retornar" onclick="retornar()">Retornar</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="corpo_cruzada" class="corpo_cruzadas">
+                <div id="cruzada" class="caixa_cruzadas">
+
+                    <input id="cpu_1" maxlength="1" class="input_CPU-1" type="text">
+                    <input id="cpu_2" maxlength="1" class="input_CPU-2" type="text">
+                    <input id="cpu_3" maxlength="1" class="input_CPU-3" type="text">
+
+                    <input id="ula-1" maxlength="1" class="input_ULA-1" type="text">
+                    <input id="ula-2" maxlength="1" class="input_ULA-2" type="text">
+
+                    <input id="registradores-1" maxlength="1" class="input_registradores-1" type="text">
+                    <input id="registradores-2" maxlength="1" class="input_registradores-2" type="text">
+                    <input id="registradores-3" maxlength="1" class="input_registradores-3" type="text">
+                    <input id="registradores-4" maxlength="1" class="input_registradores-4" type="text">
+                    <input id="registradores-5" maxlength="1" class="input_registradores-5" type="text">
+                    <input id="registradores-6" maxlength="1" class="input_registradores-6" type="text">
+                    <input id="registradores-7" maxlength="1" class="input_registradores-7" type="text">
+                    <input id="registradores-8" maxlength="1" class="input_registradores-8" type="text">
+                    <input id="registradores-9" maxlength="1" class="input_registradores-9" type="text">
+                    <input id="registradores-10" maxlength="1" class="input_registradores-10" type="text">
+                    <input id="registradores-11" maxlength="1" class="input_registradores-11" type="text">
+                    <input id="registradores-12" maxlength="1" class="input_registradores-12" type="text">
+                    <input id="registradores-13" maxlength="1" class="input_registradores-13" type="text">
+
+                    <input id="ram-1" maxlength="1" class="input_RAM-1" type="text">
+                    <input id="ram-2" maxlength="1" class="input_RAM-2" type="text">
+                    <input id="ram-3" maxlength="1" class="input_RAM-3" type="text">
+
+                    <input id="rom-1" maxlength="1" class="input_ROM-1" type="text">
+                    <input id="rom-2" maxlength="1" class="input_ROM-2" type="text">
+                    <input id="rom-3" maxlength="1" class="input_ROM-3" type="text">
+
+                    <input id="eprom-1" maxlength="1" class="input_EPROM-1" type="text">
+                    <input id="eprom-2" maxlength="1" class="input_EPROM-2" type="text">
+                    <input id="eprom-3" maxlength="1" class="input_EPROM-3" type="text">
+                    <input id="eprom-4" maxlength="1" class="input_EPROM-4" type="text">
+                    <input id="eprom-5" maxlength="1" class="input_EPROM-5" type="text">
+
+                    <input id="flash-1" maxlength="1" class="input_flash-1" type="text">
+                    <input id="flash-2" maxlength="1" class="input_flash-2" type="text">
+                    <input id="flash-3" maxlength="1" class="input_flash-3" type="text">
+                    <input id="flash-4" maxlength="1" class="input_flash-4" type="text">
+                    <input id="flash-5" maxlength="1" class="input_flash-5" type="text">
+
+                    <input id="memoria_de_massa-1" maxlength="1" class="input_memoria_de_massa-1" type="text">
+                    <input id="memoria_de_massa-2" maxlength="1" class="input_memoria_de_massa-2" type="text">
+                    <input id="memoria_de_massa-3" maxlength="1" class="input_memoria_de_massa-3" type="text">
+                    <input id="memoria_de_massa-4" maxlength="1" class="input_memoria_de_massa-4" type="text">
+                    <input id="memoria_de_massa-5" maxlength="1" class="input_memoria_de_massa-5" type="text">
+                    <input id="memoria_de_massa-6" maxlength="1" class="input_memoria_de_massa-6" type="text">
+                    <input id="memoria_de_massa-7" maxlength="1" class="input_memoria_de_massa-7" type="text">
+                    <input id="memoria_de_massa-8" maxlength="1" class="input_memoria_de_massa-8" type="text">
+                    <input id="memoria_de_massa-9" maxlength="1" class="input_memoria_de_massa-9" type="text">
+                    <input id="memoria_de_massa-10" maxlength="1" class="input_memoria_de_massa-10" type="text">
+                    <input id="memoria_de_massa-11" maxlength="1" class="input_memoria_de_massa-11" type="text">
+
+                    <input id="dma-1" maxlength="1" class="input_DMA-1" type="text">
+                    <input id="dma-2" maxlength="1" class="input_DMA-2" type="text">
+                    <input id="dma-3" maxlength="1" class="input_DMA-3" type="text">
+
+                    <input id="cs-1" maxlength="1" class="input_CS-1" type="text">
+                    <input id="cs-2" maxlength="1" class="input_CS-2" type="text">
+
+                    <input id="adress_bus-1" maxlength="1" class="input_adress_bus-1" type="text">
+                    <input id="adress_bus-2" maxlength="1" class="input_adress_bus-2" type="text">
+                    <input id="adress_bus-3" maxlength="1" class="input_adress_bus-3" type="text">
+                    <input id="adress_bus-4" maxlength="1" class="input_adress_bus-4" type="text">
+                    <input id="adress_bus-5" maxlength="1" class="input_adress_bus-5" type="text">
+                    <input id="adress_bus-6" maxlength="1" class="input_adress_bus-6" type="text">
+
+                    <input id="data_bus-1" maxlength="1" class="input_data_bus-1" type="text">
+                    <input id="data_bus-2" maxlength="1" class="input_data_bus-2" type="text">
+                    <input id="data_bus-3" maxlength="1" class="input_data_bus-3" type="text">
+                    <input id="data_bus-4" maxlength="1" class="input_data_bus-4" type="text">
+                    <input id="data_bus-5" maxlength="1" class="input_data_bus-5" type="text">
+                    <input id="data_bus-6" maxlength="1" class="input_data_bus-6" type="text">
+                    <input id="data_bus-7" maxlength="1" class="input_data_bus-7" type="text">
+
+                    <input id="i5-1" maxlength="1" class="input_i5-1" type="text">
+
+                    <input id="i7-1" maxlength="1" class="input_i7-1" type="text">
+
+                    <input id="dual_core-1" maxlength="1" class="input_dual_core-1" type="text">
+                    <input id="dual_core-2" maxlength="1" class="input_dual_core-2" type="text">
+                    <input id="dual_core-3" maxlength="1" class="input_dual_core-3" type="text">
+                    <input id="dual_core-4" maxlength="1" class="input_dual_core-4" type="text">
+                    <input id="dual_core-5" maxlength="1" class="input_dual_core-5" type="text">
+                    <input id="dual_core-6" maxlength="1" class="input_dual_core-6" type="text">
+                    <input id="dual_core-7" maxlength="1" class="input_dual_core-7" type="text">
+                    <input id="dual_core-8" maxlength="1" class="input_dual_core-8" type="text">
+
+                    <input id="quad_core-1" maxlength="1" class="input_quad_core-1" type="text">
+                    <input id="quad_core-2" maxlength="1" class="input_quad_core-2" type="text">
+                    <input id="quad_core-3" maxlength="1" class="input_quad_core-3" type="text">
+                    <input id="quad_core-4" maxlength="1" class="input_quad_core-4" type="text">
+                    <input id="quad_core-5" maxlength="1" class="input_quad_core-5" type="text">
+                    <input id="quad_core-6" maxlength="1" class="input_quad_core-6" type="text">
+                    <input id="quad_core-7" maxlength="1" class="input_quad_core-7" type="text">
+                    <input id="quad_core-8" maxlength="1" class="input_quad_core-8" type="text">
+
+                    <div id="palavra-1" maxlength="1" class="palavra-1">1</div>
+                    <div id="palavra-2" maxlength="1" class="palavra-2">2</div>
+                    <div id="palavra-3" maxlength="1" class="palavra-3">3</div>
+                    <div id="palavra-4" maxlength="1" class="palavra-4">4</div>
+                    <div id="palavra-5" maxlength="1" class="palavra-5">5</div>
+                    <div id="palavra-6" maxlength="1" class="palavra-6">6</div>
+                    <div id="palavra-7" maxlength="1" class="palavra-7">7</div>
+                    <div id="palavra-8" maxlength="1" class="palavra-8">8</div>
+                    <div id="palavra-9" maxlength="1" class="palavra-9">9</div>
+                    <div id="palavra-10" maxlength="1" class="palavra-10">10</div>
+                    <div id="palavra-11" maxlength="1" class="palavra-11">11</div>
+                    <div id="palavra-12" maxlength="1" class="palavra-12">12</div>
+                    <div id="palavra-13" maxlength="1" class="palavra-13">13</div>
+                    <div id="palavra-14" maxlength="1" class="palavra-14">14</div>
+                    <div id="palavra-15" maxlength="1" class="palavra-15">15</div>
+                    <div id="palavra-16" maxlength="1" class="palavra-16">16</div>
+
+                    <button onclick="resultado()" id="botao_checar" class="button_checar">Conferir Resultado</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="corpo_rodape">
+            <div id="rodape" class="caixa_rodape">
+                <div class="caixa_select">
+                    <div id="botoes_dica" class="select_dicas">
+                        <button onclick="dica_1()" id="dica1" class="button_dica">1</button>
+                        <button onclick="dica_2()" id="dica2" class="button_dica">2</button>
+                        <button onclick="dica_3()" id="dica3" class="button_dica">3</button>
+                        <button onclick="dica_4()" id="dica4" class="button_dica">4</button>
+                        <button onclick="dica_5()" id="dica5" class="button_dica">5</button>
+                        <button onclick="dica_6()" id="dica6" class="button_dica">6</button>
+                        <button onclick="dica_7()" id="dica7" class="button_dica">7</button>
+                        <button onclick="dica_8()" id="dica8" class="button_dica">8</button>
+                        <button onclick="dica_9()" id="dica9" class="button_dica">9</button>
+                        <button onclick="dica_10()" id="dica10" class="button_dica">10</button>
+                        <button onclick="dica_11()" id="dica11" class="button_dica">11</button>
+                        <button onclick="dica_12()" id="dica12" class="button_dica">12</button>
+                        <button onclick="dica_13()" id="dica13" class="button_dica">13</button>
+                        <button onclick="dica_14()" id="dica14" class="button_dica">14</button>
+                        <button onclick="dica_15()" id="dica15" class="button_dica">15</button>
+                        <button onclick="dica_16()" id="dica16" class="button_dica">16</button>
+
+                        <div class="dicas">
+                            <div id="text_dicas" class="dicas_texto">Dicas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa_texto_rodape">
+                    <div id="div_dica" class="texto_rodape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    var cpu_1 = document.getElementById('cpu_1');
+    var cpu_2 = document.getElementById('cpu_2');
+    var cpu_3 = document.getElementById('cpu_3');
+
+    var ula_1 = document.getElementById('ula-1');
+    var ula_2 = document.getElementById('ula-2');
+
+    var registradores_1 = document.getElementById('registradores-1');
+    var registradores_2 = document.getElementById('registradores-2');
+    var registradores_3 = document.getElementById('registradores-3');
+    var registradores_4 = document.getElementById('registradores-4');
+    var registradores_5 = document.getElementById('registradores-5');
+    var registradores_6 = document.getElementById('registradores-6');
+    var registradores_7 = document.getElementById('registradores-7');
+    var registradores_8 = document.getElementById('registradores-8');
+    var registradores_9 = document.getElementById('registradores-9');
+    var registradores_10 = document.getElementById('registradores-10');
+    var registradores_11 = document.getElementById('registradores-11');
+    var registradores_12 = document.getElementById('registradores-12');
+    var registradores_13 = document.getElementById('registradores-13');
+
+    var ram_1 = document.getElementById('ram-1');
+    var ram_2 = document.getElementById('ram-2');
+    var ram_3 = document.getElementById('ram-3');
+
+    var rom_1 = document.getElementById('rom-1');
+    var rom_2 = document.getElementById('rom-2');
+    var rom_3 = document.getElementById('rom-3');
+
+    var eprom_1 = document.getElementById('eprom-1');
+    var eprom_2 = document.getElementById('eprom-2');
+    var eprom_3 = document.getElementById('eprom-3');
+    var eprom_4 = document.getElementById('eprom-4');
+    var eprom_5 = document.getElementById('eprom-5');
+
+    var flash_1 = document.getElementById('flash-1');
+    var flash_2 = document.getElementById('flash-2');
+    var flash_3 = document.getElementById('flash-3');
+    var flash_4 = document.getElementById('flash-4');
+    var flash_5 = document.getElementById('flash-5');
+
+    var memoria_de_massa_1 = document.getElementById('memoria_de_massa-1');
+    var memoria_de_massa_2 = document.getElementById('memoria_de_massa-2');
+    var memoria_de_massa_3 = document.getElementById('memoria_de_massa-3');
+    var memoria_de_massa_4 = document.getElementById('memoria_de_massa-4');
+    var memoria_de_massa_5 = document.getElementById('memoria_de_massa-5');
+    var memoria_de_massa_6 = document.getElementById('memoria_de_massa-6');
+    var memoria_de_massa_7 = document.getElementById('memoria_de_massa-7');
+    var memoria_de_massa_8 = document.getElementById('memoria_de_massa-8');
+    var memoria_de_massa_9 = document.getElementById('memoria_de_massa-9');
+    var memoria_de_massa_10 = document.getElementById('memoria_de_massa-10');
+    var memoria_de_massa_11 = document.getElementById('memoria_de_massa-11');
+
+    var dma_1 = document.getElementById('dma-1');
+    var dma_2 = document.getElementById('dma-2');
+    var dma_3 = document.getElementById('dma-3');
+
+    var cs_1 = document.getElementById('cs-1');
+    var cs_2 = document.getElementById('cs-2');
+
+    var adress_bus_1 = document.getElementById('adress_bus-1');
+    var adress_bus_2 = document.getElementById('adress_bus-2');
+    var adress_bus_3 = document.getElementById('adress_bus-3');
+    var adress_bus_4 = document.getElementById('adress_bus-4');
+    var adress_bus_5 = document.getElementById('adress_bus-5');
+    var adress_bus_6 = document.getElementById('adress_bus-6');
+
+    var data_bus_1 = document.getElementById('data_bus-1');
+    var data_bus_2 = document.getElementById('data_bus-2');
+    var data_bus_3 = document.getElementById('data_bus-3');
+    var data_bus_4 = document.getElementById('data_bus-4');
+    var data_bus_5 = document.getElementById('data_bus-5');
+    var data_bus_6 = document.getElementById('data_bus-6');
+    var data_bus_7 = document.getElementById('data_bus-7');
+
+    var i5_1 = document.getElementById('i5-1');
+
+    var i7_1 = document.getElementById('i7-1');
+
+    var dual_core_1 = document.getElementById('dual_core-1');
+    var dual_core_2 = document.getElementById('dual_core-2');
+    var dual_core_3 = document.getElementById('dual_core-3');
+    var dual_core_4 = document.getElementById('dual_core-4');
+    var dual_core_5 = document.getElementById('dual_core-5');
+    var dual_core_6 = document.getElementById('dual_core-6');
+    var dual_core_7 = document.getElementById('dual_core-7');
+    var dual_core_8 = document.getElementById('dual_core-8');
+
+    var quad_core_1 = document.getElementById('quad_core-1');
+    var quad_core_2 = document.getElementById('quad_core-2');
+    var quad_core_3 = document.getElementById('quad_core-3');
+    var quad_core_4 = document.getElementById('quad_core-4');
+    var quad_core_5 = document.getElementById('quad_core-5');
+    var quad_core_6 = document.getElementById('quad_core-6');
+    var quad_core_7 = document.getElementById('quad_core-7');
+    var quad_core_8 = document.getElementById('quad_core-8');
+
+    var palavra_1 = document.getElementById('palavra-1');
+    var palavra_2 = document.getElementById('palavra-2');
+    var palavra_3 = document.getElementById('palavra-3');
+    var palavra_4 = document.getElementById('palavra-4');
+    var palavra_5 = document.getElementById('palavra-5');
+    var palavra_6 = document.getElementById('palavra-6');
+    var palavra_7 = document.getElementById('palavra-7');
+    var palavra_8 = document.getElementById('palavra-8');
+    var palavra_9 = document.getElementById('palavra-9');
+    var palavra_10 = document.getElementById('palavra-10');
+    var palavra_11 = document.getElementById('palavra-11');
+    var palavra_12 = document.getElementById('palavra-12');
+    var palavra_13 = document.getElementById('palavra-13');
+    var palavra_14 = document.getElementById('palavra-14');
+    var palavra_15 = document.getElementById('palavra-15');
+    var palavra_16 = document.getElementById('palavra-16');
+
+    var fonte_dica_1 = document.getElementById('dica1');
+    var fonte_dica_2 = document.getElementById('dica2');
+    var fonte_dica_3 = document.getElementById('dica3');
+    var fonte_dica_4 = document.getElementById('dica4');
+    var fonte_dica_5 = document.getElementById('dica5');
+    var fonte_dica_6 = document.getElementById('dica6');
+    var fonte_dica_7 = document.getElementById('dica7');
+    var fonte_dica_8 = document.getElementById('dica8');
+    var fonte_dica_9 = document.getElementById('dica9');
+    var fonte_dica_10 = document.getElementById('dica10');
+    var fonte_dica_11 = document.getElementById('dica11');
+    var fonte_dica_12 = document.getElementById('dica12');
+    var fonte_dica_13 = document.getElementById('dica13');
+    var fonte_dica_14 = document.getElementById('dica14');
+    var fonte_dica_15 = document.getElementById('dica15');
+    var fonte_dica_16 = document.getElementById('dica16');
+
+    var menu1 = document.getElementById('menu_1');
+    var menu2 = document.getElementById('menu_2');
+    var menu3 = document.getElementById('menu_config');
+    var cruzada = document.getElementById('cruzada');
+    var fonte_cabecalho = document.getElementById('text_cabecalho');
+    var fonte_botao = document.getElementById('botao_checar');
+    var fonte_dicas = document.getElementById('botoes_dica');
+    var fonte_dicas = document.getElementById('text_dicas');
+    var fonte_text_dica = document.getElementById('div_dica');
+    var fonte_iniciar = document.getElementById('button_iniciar');
+    var fonte_config = document.getElementById('button_config');
+    var fonte_reiniciar = document.getElementById('button_reiniciar');
+    var fonte_sair = document.getElementById('button_sair');
+    var fonte_titulo_config = document.getElementById('titulo_fonte');
+    var fonte_pequena = document.getElementById('button_pequena');
+    var fonte_normal = document.getElementById('button_normal');
+    var fonte_grande = document.getElementById('button_grande');
+    var fonte_retornar = document.getElementById('button_retornar');
+
+
+    function dica_1() {
+        div_dica.innerHTML =
+            `Peça responsável por calcular e realizar tarefas determinadas pelo usuário e é considerada o cérebro do PC.`
+            fonte_dica_1.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_2() {
+        div_dica.innerHTML =
+            `Circuito digital capaz de combinar uma variedade de operações lógicas e aritméticas a serem executadas no computador, 
+             conhecida como “grande calculadora eletrônica".`
+             fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_3() {
+        div_dica.innerHTML =
+            `Memória contida dentro da própria CPU que armazena n bits.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_4() {
+        div_dica.innerHTML =
+            `Memória volátil capaz de carregar os programas em execução e os respectivos dados do utilizador, 
+            usada pelo processador para armazenamento temporário de arquivos.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_5() {
+        div_dica.innerHTML =
+            `Memória de acesso aleatório em que as informações são gravadas uma única vez 
+            e após isso não podem ser alteradas ou apagadas, somente acessadas.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_6() {
+        div_dica.innerHTML =
+            `Tipo de memória não volátil, capaz de realizar armazenamento de dados em massa, 
+            é capaz de ser lida ilimitadas vezes e pode ser apagada apenas por exposição a uma forte luz ultravioleta.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_7() {
+        div_dica.innerHTML =
+            `Dispositivo de armazenamento não volátil, 
+            trata-se de um chip re-escrevível que preserva seu conteúdo sem necessidade de fonte de alimentação.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_8() {
+        div_dica.innerHTML =
+            `Possui como função armazenar grandes quantidades de informações, 
+            que mantém os dados mesmo com seu desligamento.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_9() {
+        div_dica.innerHTML =
+            `Realiza o acesso a memória RAM do sistema sem depender do processador, 
+            realizando este acesso de forma direta, permitindo que o processador não seja sobrecarregado.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_10() {
+        div_dica.innerHTML =
+            `Linha de controle que habilita a memória para que as portas de entrada e saída (I/O) sejam liberadas para a operação desejada.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_11() {
+        div_dica.innerHTML =
+            `Possui como função indicar o endereço de memória dos dados que o processador deve retirar ou enviar.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_12() {
+        div_dica.innerHTML =
+            `Possui como função o transporte dos dados de um computador,
+            transfere os dados entre diferentes componentes de um computador ou entre diferentes computadores.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_13() {
+        div_dica.innerHTML =
+            `Processador da Intel destinada a desktop, pertence ao segmento intermediario de performance da marca,
+            utiliza soquete LGA 1156.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_14() {
+        div_dica.innerHTML =
+            `Processador da Intel destinada a desktop, foi lançada com microarquitetura Intel Nehalem,
+            pertence a uma categoria superior a linha intermediaria da marca.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_15() {
+        div_dica.innerHTML =
+            `Processador que possui suas operações divididas em duas partes, 
+            permitindo que seu trabalho seja realizado em um ambiente multitarefa.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgb(0, 0, 255)';
+            fonte_dica_16.style.backgroundColor = 'rgba(222, 184, 135)';
+    }
+
+    function dica_16() {
+        div_dica.innerHTML =
+            `Processador que possui suas operações divididas em quatro partes, 
+            permitindo que seu trabalho seja realizado em um ambiente multitarefa.`
+            fonte_dica_1.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_2.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_3.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_4.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_5.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_6.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_7.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_8.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_9.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_10.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_11.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_12.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_13.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_14.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_15.style.backgroundColor = 'rgba(222, 184, 135)';
+            fonte_dica_16.style.backgroundColor = 'rgb(0, 0, 255)';
+    }
+
+
+
+    function iniciar() {
+        menu1.style.display = 'none';
+        menu2.style.display = 'block';
+        cruzada.style.display = 'block';
+    }
+
+
+    function configuracoes() {
+        menu1.style.display = 'none';
+        menu3.style.display = 'block';
+    }
+
+
+    function retornar() {
+        menu1.style.display = 'block';
+        menu3.style.display = 'none';
+    }
+
+    function pequena() {
+        fonte_cabecalho.style = 'font-size: 2.5vw';
+        fonte_botao.style = 'font-size: 0.8vw';
+        fonte_dicas.style = 'font-size: 0.8vw';
+        fonte_dicas.style = 'font-size: 1.2vw';
+        fonte_text_dica.style = 'font-size: 1.3vw';
+        fonte_iniciar.style = 'font-size: 1.6vw';
+        fonte_config.style = 'font-size: 1.6vw';
+        fonte_reiniciar.style = 'font-size: 1.6vw';
+        fonte_sair.style = 'font-size: 1.6vw';
+        fonte_titulo_config.style = 'font-size: 1.6vw';
+        fonte_pequena.style = 'font-size: 1.6vw';
+        fonte_normal.style = 'font-size: 1.6vw';
+        fonte_grande.style = 'font-size: 1.6vw';
+        fonte_retornar.style = 'font-size: 1.6vw';
+        fonte_dica_1.style = 'font-size: 0.7vw';
+        fonte_dica_2.style = 'font-size: 0.7vw';
+        fonte_dica_3.style = 'font-size: 0.7vw';
+        fonte_dica_4.style = 'font-size: 0.7vw';
+        fonte_dica_5.style = 'font-size: 0.7vw';
+        fonte_dica_6.style = 'font-size: 0.7vw';
+        fonte_dica_7.style = 'font-size: 0.7vw';
+        fonte_dica_8.style = 'font-size: 0.7vw';
+        fonte_dica_9.style = 'font-size: 0.7vw';
+        fonte_dica_10.style = 'font-size: 0.7vw';
+        fonte_dica_11.style = 'font-size: 0.7vw';
+        fonte_dica_12.style = 'font-size: 0.7vw';
+        fonte_dica_13.style = 'font-size: 0.7vw';
+        fonte_dica_14.style = 'font-size: 0.7vw';
+        fonte_dica_15.style = 'font-size: 0.7vw';
+        fonte_dica_16.style = 'font-size: 0.7vw';
+    }
+
+    function normal() {
+        fonte_cabecalho.style = 'font-size: 3vw';
+        fonte_botao.style = 'font-size: 1vw';
+        fonte_dicas.style = 'font-size: 1vw';
+        fonte_dicas.style = 'font-size: 1.5vw';
+        fonte_text_dica.style = 'font-size: 1.6vw';
+        fonte_iniciar.style = 'font-size: 2vw';
+        fonte_config.style = 'font-size: 2vw';
+        fonte_reiniciar.style = 'font-size: 2vw';
+        fonte_sair.style = 'font-size: 2vw';
+        fonte_titulo_config.style = 'font-size: 2vw';
+        fonte_pequena.style = 'font-size: 2vw';
+        fonte_normal.style = 'font-size: 2vw';
+        fonte_grande.style = 'font-size: 2vw';
+        fonte_retornar.style = 'font-size: 2vw';
+        dica_1.style = 'font-size: 1vw';
+        fonte_dica_1.style = 'font-size: 1vw';
+        fonte_dica_2.style = 'font-size: 1vw';
+        fonte_dica_3.style = 'font-size: 1vw';
+        fonte_dica_4.style = 'font-size: 1vw';
+        fonte_dica_5.style = 'font-size: 1vw';
+        fonte_dica_6.style = 'font-size: 1vw';
+        fonte_dica_7.style = 'font-size: 1vw';
+        fonte_dica_8.style = 'font-size: 1vw';
+        fonte_dica_9.style = 'font-size: 1vw';
+        fonte_dica_10.style = 'font-size: 1vw';
+        fonte_dica_11.style = 'font-size: 1vw';
+        fonte_dica_12.style = 'font-size: 1vw';
+        fonte_dica_13.style = 'font-size: 1vw';
+        fonte_dica_14.style = 'font-size: 1vw';
+        fonte_dica_15.style = 'font-size: 1vw';
+        fonte_dica_16.style = 'font-size: 1vw';
+    }
+
+    function grande() {
+        fonte_cabecalho.style = 'font-size: 3.5vw';
+        fonte_botao.style = 'font-size: 1.2vw';
+        fonte_dicas.style = 'font-size: 1.2vw';
+        fonte_dicas.style = 'font-size: 1.8vw';
+        fonte_text_dica.style = 'font-size: 2vw';
+        fonte_iniciar.style = 'font-size: 2.4vw';
+        fonte_config.style = 'font-size: 2.4vw';
+        fonte_reiniciar.style = 'font-size: 2.4vw';
+        fonte_sair.style = 'font-size: 2.4vw';
+        fonte_titulo_config.style = 'font-size: 2.4vw';
+        fonte_pequena.style = 'font-size: 2.4vw';
+        fonte_normal.style = 'font-size: 2.4vw';
+        fonte_grande.style = 'font-size: 2.4vw';
+        fonte_retornar.style = 'font-size: 2.4vw';
+        fonte_dica_1.style = 'font-size: 1.3vw';
+        fonte_dica_2.style = 'font-size: 1.3vw';
+        fonte_dica_3.style = 'font-size: 1.3vw';
+        fonte_dica_4.style = 'font-size: 1.3vw';
+        fonte_dica_5.style = 'font-size: 1.3vw';
+        fonte_dica_6.style = 'font-size: 1.3vw';
+        fonte_dica_7.style = 'font-size: 1.3vw';
+        fonte_dica_8.style = 'font-size: 1.3vw';
+        fonte_dica_9.style = 'font-size: 1.3vw';
+        fonte_dica_10.style = 'font-size: 1.3vw';
+        fonte_dica_11.style = 'font-size: 1.3vw';
+        fonte_dica_12.style = 'font-size: 1.3vw';
+        fonte_dica_13.style = 'font-size: 1.3vw';
+        fonte_dica_14.style = 'font-size: 1.3vw';
+        fonte_dica_15.style = 'font-size: 1.3vw';
+        fonte_dica_16.style = 'font-size: 1.3vw';
+    }
+
+
+    function sair() {
+        menu1.style.display = 'block';
+        menu2.style.display = 'none';
+        cruzada.style.display = 'none';
+
+        cpu_1.value = '';
+        cpu_2.value = '';
+        cpu_3.value = '';
+
+        ula_1.value = '';
+        ula_2.value = '';
+
+        registradores_1.value = '';
+        registradores_2.value = '';
+        registradores_3.value = '';
+        registradores_4.value = '';
+        registradores_5.value = '';
+        registradores_6.value = '';
+        registradores_7.value = '';
+        registradores_8.value = '';
+        registradores_9.value = '';
+        registradores_10.value = '';
+        registradores_11.value = '';
+        registradores_12.value = '';
+        registradores_13.value = '';
+
+        ram_1.value = '';
+        ram_2.value = '';
+        ram_3.value = '';
+
+        rom_1.value = '';
+        rom_2.value = '';
+        rom_3.value = '';
+
+        eprom_1.value = '';
+        eprom_2.value = '';
+        eprom_3.value = '';
+        eprom_4.value = '';
+        eprom_5.value = '';
+
+        flash_1.value = '';
+        flash_2.value = '';
+        flash_3.value = '';
+        flash_4.value = '';
+        flash_5.value = '';
+
+        memoria_de_massa_1.value = '';
+        memoria_de_massa_2.value = '';
+        memoria_de_massa_3.value = '';
+        memoria_de_massa_4.value = '';
+        memoria_de_massa_5.value = '';
+        memoria_de_massa_6.value = '';
+        memoria_de_massa_7.value = '';
+        memoria_de_massa_8.value = '';
+        memoria_de_massa_9.value = '';
+        memoria_de_massa_10.value = '';
+        memoria_de_massa_11.value = '';
+
+        dma_1.value = '';
+        dma_2.value = '';
+        dma_3.value = '';
+
+        cs_1.value = '';
+        cs_2.value = '';
+
+        adress_bus_1.value = '';
+        adress_bus_2.value = '';
+        adress_bus_3.value = '';
+        adress_bus_4.value = '';
+        adress_bus_5.value = '';
+        adress_bus_6.value = '';
+
+        data_bus_1.value = '';
+        data_bus_2.value = '';
+        data_bus_3.value = '';
+        data_bus_4.value = '';
+        data_bus_5.value = '';
+        data_bus_6.value = '';
+        data_bus_7.value = '';
+
+        i5_1.value = '';
+
+        i7_1.value = '';
+
+        dual_core_1.value = '';
+        dual_core_2.value = '';
+        dual_core_3.value = '';
+        dual_core_4.value = '';
+        dual_core_5.value = '';
+        dual_core_6.value = '';
+        dual_core_7.value = '';
+        dual_core_8.value = '';
+
+        quad_core_1.value = '';
+        quad_core_2.value = '';
+        quad_core_3.value = '';
+        quad_core_4.value = '';
+        quad_core_5.value = '';
+        quad_core_6.value = '';
+        quad_core_7.value = '';
+        quad_core_8.value = '';
+
+
+
+        cpu_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        cpu_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        cpu_3.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        ula_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        ula_2.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        registradores_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_7.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_8.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_9.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_10.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_11.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_12.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_13.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        ram_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        ram_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        ram_3.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        rom_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        rom_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        rom_3.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        eprom_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        eprom_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        eprom_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        eprom_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        eprom_5.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        flash_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        flash_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        flash_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        flash_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        flash_5.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        memoria_de_massa_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_7.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_8.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_9.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_10.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_11.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        dma_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        dma_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        dma_3.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        cs_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        cs_2.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        adress_bus_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_6.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        data_bus_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_7.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        i5_1.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        i7_1.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        dual_core_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_7.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_8.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        quad_core_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_7.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_8.style.backgroundColor = 'rgb(255, 255, 255)';
+    }
+
+
+    function reiniciar() {
+        cpu_1.value = '';
+        cpu_2.value = '';
+        cpu_3.value = '';
+
+        ula_1.value = '';
+        ula_2.value = '';
+
+        registradores_1.value = '';
+        registradores_2.value = '';
+        registradores_3.value = '';
+        registradores_4.value = '';
+        registradores_5.value = '';
+        registradores_6.value = '';
+        registradores_7.value = '';
+        registradores_8.value = '';
+        registradores_9.value = '';
+        registradores_10.value = '';
+        registradores_11.value = '';
+        registradores_12.value = '';
+        registradores_13.value = '';
+
+        ram_1.value = '';
+        ram_2.value = '';
+        ram_3.value = '';
+
+        rom_1.value = '';
+        rom_2.value = '';
+        rom_3.value = '';
+
+        eprom_1.value = '';
+        eprom_2.value = '';
+        eprom_3.value = '';
+        eprom_4.value = '';
+        eprom_5.value = '';
+
+        flash_1.value = '';
+        flash_2.value = '';
+        flash_3.value = '';
+        flash_4.value = '';
+        flash_5.value = '';
+
+        memoria_de_massa_1.value = '';
+        memoria_de_massa_2.value = '';
+        memoria_de_massa_3.value = '';
+        memoria_de_massa_4.value = '';
+        memoria_de_massa_5.value = '';
+        memoria_de_massa_6.value = '';
+        memoria_de_massa_7.value = '';
+        memoria_de_massa_8.value = '';
+        memoria_de_massa_9.value = '';
+        memoria_de_massa_10.value = '';
+        memoria_de_massa_11.value = '';
+
+        dma_1.value = '';
+        dma_2.value = '';
+        dma_3.value = '';
+
+        cs_1.value = '';
+        cs_2.value = '';
+
+        adress_bus_1.value = '';
+        adress_bus_2.value = '';
+        adress_bus_3.value = '';
+        adress_bus_4.value = '';
+        adress_bus_5.value = '';
+        adress_bus_6.value = '';
+
+        data_bus_1.value = '';
+        data_bus_2.value = '';
+        data_bus_3.value = '';
+        data_bus_4.value = '';
+        data_bus_5.value = '';
+        data_bus_6.value = '';
+        data_bus_7.value = '';
+
+        i5_1.value = '';
+
+        i7_1.value = '';
+
+        dual_core_1.value = '';
+        dual_core_2.value = '';
+        dual_core_3.value = '';
+        dual_core_4.value = '';
+        dual_core_5.value = '';
+        dual_core_6.value = '';
+        dual_core_7.value = '';
+        dual_core_8.value = '';
+
+        quad_core_1.value = '';
+        quad_core_2.value = '';
+        quad_core_3.value = '';
+        quad_core_4.value = '';
+        quad_core_5.value = '';
+        quad_core_6.value = '';
+        quad_core_7.value = '';
+        quad_core_8.value = '';
+
+
+
+        cpu_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        cpu_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        cpu_3.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        ula_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        ula_2.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        registradores_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_7.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_8.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_9.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_10.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_11.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_12.style.backgroundColor = 'rgb(255, 255, 255)';
+        registradores_13.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        ram_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        ram_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        ram_3.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        rom_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        rom_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        rom_3.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        eprom_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        eprom_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        eprom_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        eprom_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        eprom_5.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        flash_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        flash_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        flash_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        flash_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        flash_5.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        memoria_de_massa_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_7.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_8.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_9.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_10.style.backgroundColor = 'rgb(255, 255, 255)';
+        memoria_de_massa_11.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        dma_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        dma_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        dma_3.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        cs_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        cs_2.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        adress_bus_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        adress_bus_6.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        data_bus_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        data_bus_7.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        i5_1.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        i7_1.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        dual_core_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_7.style.backgroundColor = 'rgb(255, 255, 255)';
+        dual_core_8.style.backgroundColor = 'rgb(255, 255, 255)';
+
+        quad_core_1.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_2.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_3.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_4.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_5.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_6.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_7.style.backgroundColor = 'rgb(255, 255, 255)';
+        quad_core_8.style.backgroundColor = 'rgb(255, 255, 255)';
+    }
+
+    function resultado() {
+
+        // CPU
+
+        var cpu_1_certo = cpu_1.value.indexOf('C') == 0 || cpu_1.value.indexOf('c') == 0;
+        var cpu_2_certo = cpu_2.value.indexOf('P') == 0 || cpu_2.value.indexOf('p') == 0;
+        var cpu_3_certo = cpu_3.value.indexOf('U') == 0 || cpu_3.value.indexOf('u') == 0;
+
+        if (cpu_1_certo && cpu_2_certo && cpu_3_certo) {
+            cpu_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            cpu_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            cpu_3.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            cpu_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            cpu_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            cpu_3.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+        // ULA
+
+        var cpu_3_certo = cpu_3.value.indexOf('U') == 0 || cpu_3.value.indexOf('u') == 0;
+        var ula_1_certo = ula_1.value.indexOf('L') == 0 || ula_1.value.indexOf('l') == 0;
+        var ula_2_certo = ula_2.value.indexOf('A') == 0 || ula_2.value.indexOf('a') == 0;
+
+
+        if (ula_1_certo && ula_2_certo && cpu_3_certo) {
+            ula_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            ula_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            cpu_3.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            ula_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            ula_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            cpu_3.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+        // REGISTRADORES
+
+        var registradores_1_certo = registradores_1.value.indexOf('R') == 0 || registradores_1.value.indexOf('r') == 0;
+        var registradores_2_certo = registradores_2.value.indexOf('E') == 0 || registradores_2.value.indexOf('e') == 0;
+        var registradores_3_certo = registradores_3.value.indexOf('G') == 0 || registradores_3.value.indexOf('g') == 0;
+        var registradores_4_certo = registradores_4.value.indexOf('I') == 0 || registradores_4.value.indexOf('i') == 0;
+        var registradores_5_certo = registradores_5.value.indexOf('S') == 0 || registradores_5.value.indexOf('s') == 0;
+        var registradores_6_certo = registradores_6.value.indexOf('T') == 0 || registradores_6.value.indexOf('t') == 0;
+        var registradores_7_certo = registradores_7.value.indexOf('R') == 0 || registradores_7.value.indexOf('r') == 0;
+        var registradores_8_certo = registradores_8.value.indexOf('A') == 0 || registradores_8.value.indexOf('a') == 0;
+        var registradores_9_certo = registradores_9.value.indexOf('D') == 0 || registradores_9.value.indexOf('d') == 0;
+        var registradores_10_certo = registradores_10.value.indexOf('O') == 0 || registradores_10.value.indexOf('o') == 0;
+        var registradores_11_certo = registradores_11.value.indexOf('R') == 0 || registradores_11.value.indexOf('r') == 0;
+        var registradores_12_certo = registradores_12.value.indexOf('E') == 0 || registradores_12.value.indexOf('e') == 0;
+        var registradores_13_certo = registradores_13.value.indexOf('S') == 0 || registradores_13.value.indexOf('s') == 0;
+
+
+        if (registradores_1_certo && registradores_2_certo && registradores_3_certo && registradores_4_certo && registradores_5_certo 
+        && registradores_6_certo && registradores_7_certo && registradores_8_certo && registradores_9_certo && registradores_10_certo 
+        && registradores_11_certo && registradores_12_certo && registradores_13_certo) {
+            registradores_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_5.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_6.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_7.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_8.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_9.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_10.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_11.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_12.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_13.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            registradores_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_5.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_6.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_7.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_8.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_9.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_10.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_11.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_12.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_13.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // RAM
+
+        var ram_1_certo = ram_1.value.indexOf('R') == 0 || ram_1.value.indexOf('r') == 0;
+        var ram_2_certo = ram_2.value.indexOf('A') == 0 || ram_2.value.indexOf('a') == 0;
+        var ram_3_certo = ram_3.value.indexOf('M') == 0 || ram_3.value.indexOf('m') == 0;
+
+
+        if (ram_1_certo && ram_2_certo && ram_3_certo) {
+            ram_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            ram_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            ram_3.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            ram_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            ram_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            ram_3.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // ROM
+
+        var rom_1_certo = rom_1.value.indexOf('R') == 0 || rom_1.value.indexOf('r') == 0;
+        var rom_2_certo = rom_2.value.indexOf('O') == 0 || rom_2.value.indexOf('o') == 0;
+        var rom_3_certo = rom_3.value.indexOf('M') == 0 || rom_3.value.indexOf('m') == 0;
+
+
+        if (rom_1_certo && rom_2_certo && rom_3_certo) {
+            rom_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            rom_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            rom_3.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            rom_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            rom_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            rom_3.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+        
+        // EPROM
+
+        var eprom_1_certo = eprom_1.value.indexOf('E') == 0 || eprom_1.value.indexOf('e') == 0;
+        var eprom_2_certo = eprom_2.value.indexOf('P') == 0 || eprom_2.value.indexOf('p') == 0;
+        var eprom_3_certo = eprom_3.value.indexOf('R') == 0 || eprom_3.value.indexOf('r') == 0;
+        var eprom_4_certo = eprom_4.value.indexOf('O') == 0 || eprom_4.value.indexOf('o') == 0;
+        var eprom_5_certo = eprom_5.value.indexOf('M') == 0 || eprom_5.value.indexOf('m') == 0;
+
+
+        if (eprom_1_certo && eprom_2_certo && eprom_3_certo && eprom_4_certo && eprom_5_certo) {
+            eprom_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            eprom_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            eprom_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            eprom_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            eprom_5.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            eprom_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            eprom_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            eprom_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            eprom_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            eprom_5.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // FLASH
+
+        var flash_1_certo = flash_1.value.indexOf('F') == 0 || flash_1.value.indexOf('f') == 0;
+        var flash_2_certo = flash_2.value.indexOf('L') == 0 || flash_2.value.indexOf('l') == 0;
+        var flash_3_certo = flash_3.value.indexOf('A') == 0 || flash_3.value.indexOf('a') == 0;
+        var flash_4_certo = flash_4.value.indexOf('S') == 0 || flash_4.value.indexOf('s') == 0;
+        var flash_5_certo = flash_5.value.indexOf('H') == 0 || flash_5.value.indexOf('h') == 0;
+
+
+        if (flash_1_certo && flash_2_certo && flash_3_certo && flash_4_certo && flash_5_certo) {
+            flash_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            flash_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            flash_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            flash_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            flash_5.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            flash_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            flash_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            flash_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            flash_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            flash_5.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // MEMORIA DE MASSA
+
+        var rom_3_certo = rom_3.value.indexOf('M') == 0 || rom_3.value.indexOf('m') == 0;
+        var memoria_de_massa_1_certo = memoria_de_massa_1.value.indexOf('E') == 0 || memoria_de_massa_1.value.indexOf('e') == 0;
+        var ram_3_certo = ram_3.value.indexOf('M') == 0 || ram_3.value.indexOf('m') == 0;
+        var memoria_de_massa_2_certo = memoria_de_massa_2.value.indexOf('O') == 0 || memoria_de_massa_2.value.indexOf('o') == 0;
+        var memoria_de_massa_3_certo = memoria_de_massa_3.value.indexOf('R') == 0 || memoria_de_massa_3.value.indexOf('r') == 0;
+        var memoria_de_massa_4_certo = memoria_de_massa_4.value.indexOf('I') == 0 || memoria_de_massa_4.value.indexOf('i') == 0;
+        var memoria_de_massa_5_certo = memoria_de_massa_5.value.indexOf('A') == 0 || memoria_de_massa_5.value.indexOf('a') == 0;
+        var memoria_de_massa_6_certo = memoria_de_massa_6.value.indexOf('-') == 0 || memoria_de_massa_6.value.indexOf('') == 0;
+        var memoria_de_massa_7_certo = memoria_de_massa_7.value.indexOf('D') == 0 || memoria_de_massa_7.value.indexOf('d') == 0;
+        var eprom_1_certo = eprom_1.value.indexOf('E') == 0 || eprom_1.value.indexOf('e') == 0;
+        var memoria_de_massa_8_certo = memoria_de_massa_8.value.indexOf('-') == 0 || memoria_de_massa_8.value.indexOf('') == 0;
+        var memoria_de_massa_9_certo = memoria_de_massa_9.value.indexOf('M') == 0 || memoria_de_massa_9.value.indexOf('m') == 0;
+        var ula_2_certo = ula_2.value.indexOf('A') == 0 || ula_2.value.indexOf('a') == 0;
+        var memoria_de_massa_10_certo = memoria_de_massa_10.value.indexOf('S') == 0 || memoria_de_massa_10.value.indexOf('s') == 0;
+        var memoria_de_massa_11_certo = memoria_de_massa_11.value.indexOf('S') == 0 || memoria_de_massa_11.value.indexOf('s') == 0;
+        var flash_3_certo = flash_3.value.indexOf('A') == 0 || flash_3.value.indexOf('a') == 0;
+        
+        if (rom_3_certo && memoria_de_massa_1_certo && ram_3_certo && memoria_de_massa_2_certo && memoria_de_massa_3_certo 
+        && memoria_de_massa_4_certo && memoria_de_massa_5_certo && memoria_de_massa_6_certo && memoria_de_massa_7_certo 
+        && eprom_1_certo && memoria_de_massa_8_certo && memoria_de_massa_9_certo && ula_2_certo && memoria_de_massa_10_certo
+        && memoria_de_massa_11_certo && flash_3_certo) {
+            rom_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            ram_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_5.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_6.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_7.style.backgroundColor = 'rgb(130, 195, 130)';
+            eprom_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_8.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_9.style.backgroundColor = 'rgb(130, 195, 130)';
+            ula_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_10.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_11.style.backgroundColor = 'rgb(130, 195, 130)';
+            flash_3.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            rom_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            ram_3.style.backgroundColor = 'rgb(195, 130, 130)';           
+            memoria_de_massa_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_5.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_6.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_7.style.backgroundColor = 'rgb(195, 130, 130)';
+            eprom_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_8.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_9.style.backgroundColor = 'rgb(195, 130, 130)';
+            ula_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_10.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_11.style.backgroundColor = 'rgb(195, 130, 130)';
+            flash_3.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // DMA
+
+        var dma_1_certo = dma_1.value.indexOf('D') == 0 || dma_1.value.indexOf('d') == 0;
+        var dma_2_certo = dma_2.value.indexOf('M') == 0 || dma_2.value.indexOf('m') == 0;
+        var dma_3_certo = dma_3.value.indexOf('A') == 0 || dma_3.value.indexOf('a') == 0;
+
+
+        if (dma_1_certo && dma_2_certo && dma_3_certo) {
+            dma_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            dma_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            dma_3.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            dma_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            dma_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            dma_3.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // CS
+
+        var cs_1_certo = cs_1.value.indexOf('C') == 0 || cs_1.value.indexOf('c') == 0;
+        var cs_2_certo = cs_2.value.indexOf('S') == 0 || cs_2.value.indexOf('s') == 0;
+
+
+        if (cs_1_certo && cs_2_certo) {
+            cs_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            cs_2.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            cs_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            cs_2.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // ADRESS BUS
+
+        var adress_bus_1_certo = adress_bus_1.value.indexOf('A') == 0 || adress_bus_1.value.indexOf('a') == 0;
+        var dma_1_certo = dma_1.value.indexOf('D') == 0 || dma_1.value.indexOf('d') == 0;
+        var adress_bus_2_certo = adress_bus_2.value.indexOf('R') == 0 || adress_bus_2.value.indexOf('r') == 0;
+        var adress_bus_3_certo = adress_bus_3.value.indexOf('E') == 0 || adress_bus_3.value.indexOf('e') == 0;
+        var cs_2_certo = cs_2.value.indexOf('S') == 0 || cs_2.value.indexOf('s') == 0;
+        var adress_bus_4_certo = adress_bus_4.value.indexOf('S') == 0 || adress_bus_4.value.indexOf('s') == 0;
+        var memoria_de_massa_6_certo = memoria_de_massa_6.value.indexOf('-') == 0 || memoria_de_massa_6.value.indexOf('') == 0;
+        var adress_bus_5_certo = adress_bus_5.value.indexOf('B') == 0 || adress_bus_5.value.indexOf('b') == 0;
+        var adress_bus_6_certo = adress_bus_6.value.indexOf('U') == 0 || adress_bus_6.value.indexOf('u') == 0;
+        var registradores_13_certo = registradores_13.value.indexOf('S') == 0 || registradores_13.value.indexOf('s') == 0;
+
+
+        if (adress_bus_1_certo && dma_1_certo && adress_bus_2_certo && adress_bus_3_certo && cs_2_certo
+        && adress_bus_4_certo && memoria_de_massa_6_certo && adress_bus_5_certo && adress_bus_6_certo && registradores_13_certo) {
+            adress_bus_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            dma_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            adress_bus_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            adress_bus_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            cs_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            adress_bus_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            memoria_de_massa_6.style.backgroundColor = 'rgb(130, 195, 130)';
+            adress_bus_5.style.backgroundColor = 'rgb(130, 195, 130)';
+            adress_bus_6.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_13.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            adress_bus_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            dma_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            adress_bus_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            adress_bus_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            cs_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            adress_bus_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            memoria_de_massa_6.style.backgroundColor = 'rgb(195, 130, 130)';
+            adress_bus_5.style.backgroundColor = 'rgb(195, 130, 130)';
+            adress_bus_6.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_13.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+
+        // DATA BUS
+
+        var registradores_9_certo = registradores_9.value.indexOf('D') == 0 || registradores_9.value.indexOf('d') == 0;
+        var data_bus_1_certo = data_bus_1.value.indexOf('A') == 0 || data_bus_1.value.indexOf('a') == 0;
+        var data_bus_2_certo = data_bus_2.value.indexOf('T') == 0 || data_bus_2.value.indexOf('t') == 0;
+        var data_bus_3_certo = data_bus_3.value.indexOf('A') == 0 || data_bus_3.value.indexOf('a') == 0;
+        var data_bus_4_certo = data_bus_4.value.indexOf('-') == 0 || data_bus_4.value.indexOf('') == 0;
+        var data_bus_5_certo = data_bus_5.value.indexOf('B') == 0 || data_bus_5.value.indexOf('b') == 0;
+        var data_bus_6_certo = data_bus_6.value.indexOf('U') == 0 || data_bus_6.value.indexOf('u') == 0;
+        var data_bus_7_certo = data_bus_7.value.indexOf('S') == 0 || data_bus_7.value.indexOf('s') == 0;
+
+
+        if (registradores_9_certo && data_bus_1_certo && data_bus_2_certo && data_bus_3_certo && data_bus_4_certo
+        && data_bus_5_certo && data_bus_6_certo && data_bus_7_certo ) {
+            registradores_9.style.backgroundColor = 'rgb(130, 195, 130)';
+            data_bus_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            data_bus_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            data_bus_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            data_bus_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            data_bus_5.style.backgroundColor = 'rgb(130, 195, 130)';
+            data_bus_6.style.backgroundColor = 'rgb(130, 195, 130)';
+            data_bus_7.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            registradores_9.style.backgroundColor = 'rgb(195, 130, 130)';
+            data_bus_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            data_bus_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            data_bus_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            data_bus_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            data_bus_5.style.backgroundColor = 'rgb(195, 130, 130)';
+            data_bus_6.style.backgroundColor = 'rgb(195, 130, 130)';
+            data_bus_7.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // I5
+
+        var registradores_4_certo = registradores_4.value.indexOf('I') == 0 || registradores_4.value.indexOf('i') == 0;
+        var i5_1_certo = i5_1.value.indexOf('5') == 0;
+
+
+        if (registradores_4_certo && i5_1_certo) {
+            registradores_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            i5_1.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            registradores_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            i5_1.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // I7
+
+        var memoria_de_massa_4_certo = memoria_de_massa_4.value.indexOf('I') == 0 || memoria_de_massa_4.value.indexOf('i') == 0;
+        var i7_1_certo = i7_1.value.indexOf('7') == 0;
+
+
+        if (memoria_de_massa_4_certo && i7_1_certo) {
+            memoria_de_massa_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            i7_1.style.backgroundColor = 'rgb(130, 195, 130)';
+        } else {
+            memoria_de_massa_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            i7_1.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // DUAL CORE
+
+        var dual_core_1_certo = dual_core_1.value.indexOf('D') == 0 || dual_core_1.value.indexOf('d') == 0;
+        var dual_core_2_certo = dual_core_2.value.indexOf('U') == 0 || dual_core_2.value.indexOf('u') == 0;
+        var dual_core_3_certo = dual_core_3.value.indexOf('A') == 0 || dual_core_3.value.indexOf('a') == 0;
+        var dual_core_4_certo = dual_core_4.value.indexOf('L') == 0 || dual_core_4.value.indexOf('l') == 0;
+        var dual_core_5_certo = dual_core_5.value.indexOf('-') == 0 || dual_core_5.value.indexOf('') == 0;
+        var dual_core_6_certo = dual_core_6.value.indexOf('C') == 0 || dual_core_6.value.indexOf('c') == 0;
+        var dual_core_7_certo = dual_core_7.value.indexOf('O') == 0 || dual_core_7.value.indexOf('o') == 0;
+        var registradores_1_certo = registradores_1.value.indexOf('R') == 0 || registradores_1.value.indexOf('r') == 0;
+        var dual_core_8_certo = dual_core_8.value.indexOf('E') == 0 || dual_core_8.value.indexOf('e') == 0;
+
+
+        if (dual_core_1_certo && dual_core_2_certo && dual_core_3_certo && dual_core_4_certo && dual_core_5_certo
+        && dual_core_6_certo && dual_core_7_certo && registradores_1_certo && dual_core_8_certo) {
+            dual_core_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            dual_core_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            dual_core_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            dual_core_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            dual_core_5.style.backgroundColor = 'rgb(130, 195, 130)';
+            dual_core_6.style.backgroundColor = 'rgb(130, 195, 130)';
+            dual_core_7.style.backgroundColor = 'rgb(130, 195, 130)';
+            registradores_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            dual_core_8.style.backgroundColor = 'rgb(130, 195, 130)';
+
+        } else {
+            dual_core_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            dual_core_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            dual_core_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            dual_core_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            dual_core_5.style.backgroundColor = 'rgb(195, 130, 130)';
+            dual_core_6.style.backgroundColor = 'rgb(195, 130, 130)';
+            dual_core_7.style.backgroundColor = 'rgb(195, 130, 130)';
+            registradores_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            dual_core_8.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+
+        // QUAD CORE
+
+        var quad_core_1_certo = quad_core_1.value.indexOf('Q') == 0 || quad_core_1.value.indexOf('q') == 0;
+        var data_bus_6_certo = data_bus_6.value.indexOf('U') == 0 || data_bus_6.value.indexOf('u') == 0;
+        var quad_core_2_certo = quad_core_3.value.indexOf('A') == 0 || quad_core_3.value.indexOf('a') == 0;
+        var quad_core_3_certo = quad_core_4.value.indexOf('D') == 0 || quad_core_4.value.indexOf('d') == 0;
+        var quad_core_4_certo = quad_core_5.value.indexOf('-') == 0 || quad_core_5.value.indexOf('') == 0;
+        var quad_core_5_certo = quad_core_6.value.indexOf('C') == 0 || quad_core_6.value.indexOf('c') == 0;
+        var quad_core_6_certo = quad_core_7.value.indexOf('O') == 0 || quad_core_7.value.indexOf('o') == 0;
+        var quad_core_7_certo = quad_core_7.value.indexOf('R') == 0 || quad_core_7.value.indexOf('r') == 0;
+        var quad_core_8_certo = quad_core_8.value.indexOf('E') == 0 || quad_core_8.value.indexOf('e') == 0;
+
+
+        if (quad_core_1_certo && data_bus_6_certo && quad_core_2_certo && quad_core_3_certo && quad_core_4_certo
+        && quad_core_5_certo && quad_core_6_certo && quad_core_7_certo && quad_core_8_certo) {
+            quad_core_1.style.backgroundColor = 'rgb(130, 195, 130)';
+            data_bus_6.style.backgroundColor = 'rgb(130, 195, 130)';
+            quad_core_2.style.backgroundColor = 'rgb(130, 195, 130)';
+            quad_core_3.style.backgroundColor = 'rgb(130, 195, 130)';
+            quad_core_4.style.backgroundColor = 'rgb(130, 195, 130)';
+            quad_core_5.style.backgroundColor = 'rgb(130, 195, 130)';
+            quad_core_6.style.backgroundColor = 'rgb(130, 195, 130)';
+            quad_core_7.style.backgroundColor = 'rgb(130, 195, 130)';
+            quad_core_8.style.backgroundColor = 'rgb(130, 195, 130)';
+
+        } else {
+            quad_core_1.style.backgroundColor = 'rgb(195, 130, 130)';
+            data_bus_6.style.backgroundColor = 'rgb(195, 130, 130)';
+            quad_core_2.style.backgroundColor = 'rgb(195, 130, 130)';
+            quad_core_3.style.backgroundColor = 'rgb(195, 130, 130)';
+            quad_core_4.style.backgroundColor = 'rgb(195, 130, 130)';
+            quad_core_5.style.backgroundColor = 'rgb(195, 130, 130)';
+            quad_core_6.style.backgroundColor = 'rgb(195, 130, 130)';
+            quad_core_7.style.backgroundColor = 'rgb(195, 130, 130)';
+            quad_core_8.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+    }
+</script>
