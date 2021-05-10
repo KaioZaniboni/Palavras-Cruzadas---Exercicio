@@ -775,7 +775,6 @@
         fonte_normal.style = 'font-size: 2vw';
         fonte_grande.style = 'font-size: 2vw';
         fonte_retornar.style = 'font-size: 2vw';
-        dica_1.style = 'font-size: 1vw';
         fonte_dica_1.style = 'font-size: 1vw';
         fonte_dica_2.style = 'font-size: 1vw';
         fonte_dica_3.style = 'font-size: 1vw';
@@ -1544,7 +1543,7 @@
 
 
         if (registradores_9_certo && data_bus_1_certo && data_bus_2_certo && data_bus_3_certo && data_bus_4_certo
-        && data_bus_5_certo && data_bus_6_certo && data_bus_7_certo ) {
+        && data_bus_5_certo && data_bus_6_certo && data_bus_7_certo) {
             registradores_9.style.backgroundColor = 'rgb(130, 195, 130)';
             data_bus_1.style.backgroundColor = 'rgb(130, 195, 130)';
             data_bus_2.style.backgroundColor = 'rgb(130, 195, 130)';
@@ -1637,11 +1636,11 @@
 
         var quad_core_1_certo = quad_core_1.value.indexOf('Q') == 0 || quad_core_1.value.indexOf('q') == 0;
         var data_bus_6_certo = data_bus_6.value.indexOf('U') == 0 || data_bus_6.value.indexOf('u') == 0;
-        var quad_core_2_certo = quad_core_3.value.indexOf('A') == 0 || quad_core_3.value.indexOf('a') == 0;
-        var quad_core_3_certo = quad_core_4.value.indexOf('D') == 0 || quad_core_4.value.indexOf('d') == 0;
-        var quad_core_4_certo = quad_core_5.value.indexOf('-') == 0 || quad_core_5.value.indexOf('') == 0;
-        var quad_core_5_certo = quad_core_6.value.indexOf('C') == 0 || quad_core_6.value.indexOf('c') == 0;
-        var quad_core_6_certo = quad_core_7.value.indexOf('O') == 0 || quad_core_7.value.indexOf('o') == 0;
+        var quad_core_2_certo = quad_core_2.value.indexOf('A') == 0 || quad_core_2.value.indexOf('a') == 0;
+        var quad_core_3_certo = quad_core_3.value.indexOf('D') == 0 || quad_core_3.value.indexOf('d') == 0;
+        var quad_core_4_certo = quad_core_4.value.indexOf('-') == 0 || quad_core_4.value.indexOf('') == 0;
+        var quad_core_5_certo = quad_core_5.value.indexOf('C') == 0 || quad_core_5.value.indexOf('c') == 0;
+        var quad_core_6_certo = quad_core_6.value.indexOf('O') == 0 || quad_core_6.value.indexOf('o') == 0;
         var quad_core_7_certo = quad_core_7.value.indexOf('R') == 0 || quad_core_7.value.indexOf('r') == 0;
         var quad_core_8_certo = quad_core_8.value.indexOf('E') == 0 || quad_core_8.value.indexOf('e') == 0;
 
@@ -1668,6 +1667,29 @@
             quad_core_6.style.backgroundColor = 'rgb(195, 130, 130)';
             quad_core_7.style.backgroundColor = 'rgb(195, 130, 130)';
             quad_core_8.style.backgroundColor = 'rgb(195, 130, 130)';
+        }
+
+        // FIM DE JOGO
+
+        if (cpu_1_certo && cpu_2_certo && cpu_3_certo && ula_1_certo && ula_2_certo && registradores_1_certo && registradores_2_certo 
+        && registradores_3_certo && registradores_4_certo && registradores_5_certo && registradores_6_certo && 
+        registradores_7_certo && registradores_8_certo && registradores_9_certo && registradores_10_certo && registradores_11_certo 
+        && registradores_12_certo && registradores_13_certo && ram_1_certo && ram_2_certo && ram_3_certo && rom_1_certo && 
+        rom_2_certo && rom_3_certo && eprom_1_certo && eprom_2_certo && eprom_3_certo && eprom_4_certo && eprom_5_certo &&
+        flash_1_certo && flash_2_certo && flash_3_certo && flash_4_certo && flash_5_certo && rom_3_certo && memoria_de_massa_1_certo 
+        && ram_3_certo && memoria_de_massa_2_certo && memoria_de_massa_3_certo && memoria_de_massa_4_certo && 
+        memoria_de_massa_5_certo && memoria_de_massa_6_certo && memoria_de_massa_7_certo && eprom_1_certo && 
+        memoria_de_massa_8_certo && memoria_de_massa_9_certo && ula_2_certo && memoria_de_massa_10_certo&& memoria_de_massa_11_certo && 
+        flash_3_certo && dma_1_certo && dma_2_certo && dma_3_certo && cs_1_certo && cs_2_certo && adress_bus_1_certo && dma_1_certo && 
+        adress_bus_2_certo && adress_bus_3_certo && cs_2_certo && adress_bus_4_certo && memoria_de_massa_6_certo && 
+        adress_bus_5_certo && adress_bus_6_certo && registradores_13_certo && registradores_9_certo && data_bus_1_certo && 
+        data_bus_2_certo && data_bus_3_certo && data_bus_4_certo && data_bus_5_certo && data_bus_6_certo && data_bus_7_certo &&
+        registradores_4_certo && i5_1_certo && memoria_de_massa_4_certo && i7_1_certo && dual_core_1_certo && dual_core_2_certo && 
+        dual_core_3_certo && dual_core_4_certo && dual_core_5_certo&& dual_core_6_certo && dual_core_7_certo && registradores_1_certo && 
+        dual_core_8_certo && quad_core_1_certo && data_bus_6_certo && quad_core_2_certo && quad_core_3_certo && quad_core_4_certo
+        && quad_core_5_certo && quad_core_6_certo && quad_core_7_certo && quad_core_8_certo){
+
+            alert('Parabens!!! Você encerrou o jogo!!!')
         }
     }
 </script>
